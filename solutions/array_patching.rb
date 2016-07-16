@@ -111,5 +111,5 @@ class Array
       search_res.nil? ? nil : mid + 1 + search_res
     end
   end
-  
+
 end
