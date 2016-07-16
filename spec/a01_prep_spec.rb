@@ -1,6 +1,6 @@
 require 'rspec'
 require_relative '../lib/a01_prep'
-# require_relative '../solutions/a01_prep_solutions'
+# require_relative '../solutions/a01_prep_solutions' test solutions
 
 describe 'my_select' do
 
@@ -14,6 +14,24 @@ describe 'my_select' do
     expect(a.my_select { |num| num == 4 }).to eq([])
   end
 
+end
+
+describe "my_each" do
+  res = []
+  [1,2,3].my_each_with_index{|el| res << 2*el}
+
+  it "It works for blocks" do
+    expect(res).to eq([2,4,6])
+  end
+end
+
+describe "my_each_with_index" do
+  res = []
+  [1,2,3].my_each_with_index{|el, i| res << 2*el + i}
+
+  it "It works for blocks that use both the index and element" do
+    expect(res).to eq([2,5,8])
+  end
 end
 
 describe 'my_reject' do
@@ -171,6 +189,6 @@ describe "my_bsearch" do
   end
 
   it "Accepts a comparison block" do
-    expect([1, 2, 3, 4, 5, 7].my_bsearch(6){|a,b| a+1 <=> b}).to eq(4)
+    expect([1, 2, 3, 4, 5, 7].my_bsearch(6){|a,b| a*3 <=> b}).to eq(1)
   end
 end
