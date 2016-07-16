@@ -15,16 +15,15 @@ class RecursionMachine
 
   end
 
-<<<<<<< HEAD
   # return b^n recursively. Your solution should accept negative values
   # for n
   def exponent(b, n)
 
   end
 
-=======
   # make better change problem from class
   def make_better_change(value, coins)
+
   end
->>>>>>> new_problems
+
 end
