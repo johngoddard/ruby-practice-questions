@@ -14,4 +14,8 @@ class RecursionMachine
   def first_even_numbers_sum(n)
 
   end
+
+  # make better change problem from class
+  def make_better_change(value, coins)
+  end
 end

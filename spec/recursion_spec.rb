@@ -39,3 +39,17 @@ describe 'first_even_numbers_sum' do
   end
 
 end
+
+describe "Make better change" do
+  it "Returns the smallest possible array of coins" do
+    expect(r.make_better_change(24, [10,7,1])).to eq([10,7,7])
+  end
+
+  it "Returns the smallest possible array of coins" do
+    expect(r.make_better_change(25, [10,7,1])).to eq([10,7,7,1])
+  end
+
+  it "Returns the smallest possible array of coins" do
+    expect(r.make_better_change(25, [10,8,7,1])).to eq([10,8,7])
+  end
+end
