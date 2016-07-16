@@ -21,7 +21,21 @@ describe 'fibs_sum' do
 end
 
 describe 'subsets' do
+
   it "Correctly returns all subsets of an array" do
     expect(r.subsets([1, 2, 3])).to eq([[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]])
   end
+
+end
+
+describe 'first_even_numbers_sum' do
+
+  it "Correctly returns the sum of the first even number" do
+    expect(r.first_even_numbers_sum(1)).to eq(2)
+  end
+
+  it "Returns the sum of the first n even numbers" do
+    expect(r.first_even_numbers_sum(6)).to eq(42)
+  end
+
 end
