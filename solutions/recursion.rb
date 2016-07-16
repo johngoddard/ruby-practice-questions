@@ -5,4 +5,11 @@ class RecursionMachine
 
     fibs_sum(n-1) + fibs_sum(n-2) + 1
   end
+
+  def subsets(arr)
+    return [[]] if arr.empty?
+
+    subs = subsets(arr[0..-2])
+    subs.concat(subs.map{|el| el += [arr.last]})
+  end
 end
