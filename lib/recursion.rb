@@ -26,4 +26,9 @@ class RecursionMachine
 
   end
 
+  #deep dup question from class
+  def deep_dup(arr)
+
+  end
+
 end

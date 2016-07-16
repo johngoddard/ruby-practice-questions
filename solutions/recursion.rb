@@ -49,4 +49,7 @@ class RecursionMachine
     solutions.sort_by!{|arr| arr.size}.first
   end
 
+  def deep_dup(arr)
+    arr.map{|el| el.is_a?(Array) ? deep_dup(el) : el}
+  end
 end
