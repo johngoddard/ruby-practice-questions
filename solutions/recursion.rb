@@ -54,7 +54,7 @@ class RecursionMachine
   end
 
   def string_include_key?(string, key)
-    return true if key.length == 0 
+    return true if key.length == 0
 
     next_key_char = key.chars.first
     key_index = string.index(next_key_char)
@@ -62,4 +62,17 @@ class RecursionMachine
     return false if key_index.nil?
     string_include_key?(string[key_index+1..-1], key[1..-1])
   end
+
+  def prime_factorization(num)
+    return [] if num == 1
+
+    (2..Math.sqrt(num).ceil).each do |i|
+      if num % i == 0
+        return [i] + prime_factorization(num/i)
+      end
+    end
+
+    return [num]
+  end
+  
 end
