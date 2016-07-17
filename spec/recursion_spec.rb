@@ -124,6 +124,21 @@ describe "prime_factorization" do
   end
 end
 
+describe "#digital_root" do
+  it "calculates the digital root of a single-digit number" do
+    expect(r.digital_root(9)).to eq(9)
+  end
+
+  it "calculates the digital root of a larger number" do
+    expect(r.digital_root(4322)).to eq(2)
+  end
+
+  it "does not call #to_s on the argument" do
+    expect_any_instance_of(Fixnum).to_not receive(:to_s)
+    r.digital_root(4322)
+  end
+end
+
 describe "eight_queens_possibilities" do
   it "Returns an array of the correct_size" do
     pos = r.eight_queens_possibilities(0, [], nil)

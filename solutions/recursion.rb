@@ -76,6 +76,27 @@ class RecursionMachine
     return [num]
   end
 
+  # Write a method, `digital_root(num)`. It should Sum the digits of a positive
+  # integer. If it is greater than 10, sum the digits of the resulting number.
+  # Keep repeating until there is only one digit in the result, called the
+  # "digital root". **Do not use string conversion within your method.**
+  #
+  # You may wish to use a helper function, `digital_root_step(num)` which performs
+  # one step of the process.
+
+  def digital_root(num)
+    digits = []
+
+    while num > 0
+      digits << num % 10
+      num /= 10
+    end
+
+    digit_sum = digits.inject(&:+)
+
+    digit_sum > 10 ? digital_root(digit_sum) : digit_sum
+  end
+
   def eight_queens_possibilities(row_num, taken_columns, positions)
     positions ||= []
     return [positions] if row_num == 8
