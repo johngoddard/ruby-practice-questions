@@ -18,7 +18,7 @@ end
 
 describe "my_each" do
   res = []
-  [1,2,3].my_each_with_index{|el| res << 2*el}
+  [1,2,3].my_each{|el| res << 2*el}
 
   it "It works for blocks" do
     expect(res).to eq([2,4,6])
