@@ -3,6 +3,7 @@ class RecursionMachine
   # Implement a method that finds the sum of the first n
   # fibanocci numbers recursively. Assume n > 0
   def fibs_sum(n)
+
   end
 
   #returns all subsets of an array
@@ -37,15 +38,14 @@ class RecursionMachine
   #
   # string_include_key?("cadbpc", "abc") => true
   # string_include_key("cba", "abc") => false
-
   def string_include_key?(string, key)
+
   end
 
   # Write a recursive function that returns the prime factorization of
   # a given number. Assume num > 1
   #
   # prime_factorization(12) => [2,2,3]
-
   def prime_factorization(num)
 
   end
@@ -61,7 +61,6 @@ class RecursionMachine
   #
   # My solution used 3 method parameters: current_row, taken_columns, and
   # positions so far
-
   def eight_queens_possibilities(current_row, taken_columns, positions)
 
   end
