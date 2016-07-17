@@ -52,7 +52,7 @@ class RecursionMachine
 
   # CHALLENGE: Eight queens puzzle precursor
   #
-  # Write a recursive method that generates all 8! possible ways to
+  # Write a recursive method that generates all 8! possible unique ways to
   # place eight queens on a chess board such that no two queens are in
   # the same board row or column (the same diagonal is OK).
   #
