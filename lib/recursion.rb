@@ -1,7 +1,7 @@
 class RecursionMachine
 
   # Implement a method that finds the sum of the first n
-  # fibanocci numbers recursively
+  # fibanocci numbers recursively. Assume n > 0
   def fibs_sum(n)
   end
 
@@ -10,7 +10,7 @@ class RecursionMachine
 
   end
 
-  # return the sum of the first n even numbers recursively
+  # return the sum of the first n even numbers recursively. Assume n > 0
   def first_even_numbers_sum(n)
 
   end
@@ -47,7 +47,7 @@ class RecursionMachine
   # prime_factorization(12) => [2,2,3]
 
   def prime_factorization(num)
-    
+
   end
 
 end
