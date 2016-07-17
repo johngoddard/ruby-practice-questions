@@ -1,6 +1,6 @@
 require 'rspec'
-# require_relative '../lib/array_patching'
-require_relative '../solutions/array_patching'
+require_relative '../lib/array_patching'
+# require_relative '../solutions/array_patching'
 
 describe 'my_select' do
 
