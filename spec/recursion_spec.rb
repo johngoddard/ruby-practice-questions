@@ -1,4 +1,5 @@
 require 'rspec'
+require 'yaml'
 require_relative '../lib/recursion'
 # require_relative '../solutions/recursion'
 
@@ -121,4 +122,16 @@ describe "prime_factorization" do
   it "Test case: 600851475143" do
     expect(r.prime_factorization(600851475143).sort).to eq([71,839,1471,6857])
   end
+end
+
+describe "eight_queens_possibilities" do
+  it "Returns an array of the correct_size" do
+    pos = r.eight_queens_possibilities(0, [], nil)
+    sol = YAML.load_file("./possible_boards.yml").sort
+
+    expect(pos.sort).to eq(sol)
+  end
+
+  pos = r.eight_queens_possibilities(0, [], nil)
+
 end
