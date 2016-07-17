@@ -47,6 +47,7 @@ class RecursionMachine
   # prime_factorization(12) => [2,2,3]
 
   def prime_factorization(num)
+    
   end
 
 end
