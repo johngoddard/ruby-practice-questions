@@ -31,9 +31,9 @@ class RecursionMachine
 
   end
 
-  # Write a method that takes in a string to search and a key string.
+  # Write a recursive method that takes in a string to search and a key string.
   # Return true if the string contains all of the characters in the key
-  # in the same order that they appear in the key. Do this recursively
+  # in the same order that they appear in the key.
   #
   # string_include_key?("cadbpc", "abc") => true
   # string_include_key("cba", "abc") => false
@@ -43,6 +43,7 @@ class RecursionMachine
 
   # Write a recursive function that returns the prime factorization of
   # a given number. Assume num > 1
+  #
   # prime_factorization(12) => [2,2,3]
 
   def prime_factorization(num)
