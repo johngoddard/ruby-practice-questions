@@ -1,6 +1,6 @@
 require 'rspec'
-# require_relative '../lib/recursion'
-require_relative '../solutions/recursion'
+require_relative '../lib/recursion'
+# require_relative '../solutions/recursion'
 
 r = RecursionMachine.new
 
