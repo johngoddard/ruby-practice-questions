@@ -74,5 +74,5 @@ class RecursionMachine
 
     return [num]
   end
-  
+
 end
