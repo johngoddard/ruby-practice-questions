@@ -30,7 +30,7 @@ class Array
   end
 
   # Write a version of flatten that only flattens n levels of an array.
-  # E.g. If you have an array with 3 leveles of nested arrays, and run
+  # E.g. If you have an array with 3 levels of nested arrays, and run
   # my_flatten(1), you should return an array with 2 levels of nested
   # arrays
   #

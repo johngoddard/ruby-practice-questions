@@ -1,7 +1,7 @@
 class RecursionMachine
 
   # Implement a method that finds the sum of the first n
-  # fibanocci numbers recursively. Assume n > 0
+  # fibonacci numbers recursively. Assume n > 0
   def fibs_sum(n)
 
   end
